@@ -1,0 +1,57 @@
+/* styles/Footer.module.css */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footerAbout {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footerAbout h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footerAbout p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footerMenu {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footerMenu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footerMenu ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footerMenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footerMenu ul li a:hover {
+    text-decoration: underline;
+  }
+  

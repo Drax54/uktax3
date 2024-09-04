@@ -1,0 +1,26 @@
+/* Contact.module.css */
+
+/* Container styling for consistent layout */
+.container {
+    max-width: 1200px; /* You can adjust this width to your preference */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds padding around the content */
+    background-color: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Heading styling for uniformity */
+  .heading {
+    text-align: center; /* Center-align the heading */
+    color: #333; /* Dark color for heading text */
+    margin-bottom: 20px; /* Adds space below the heading */
+  }
+  
+  /* Paragraph styling for readability */
+  .paragraph {
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #666; /* Slightly lighter color for paragraph text */
+    margin-bottom: 20px; /* Adds space below paragraphs */
+  }
+  

@@ -1,0 +1,183 @@
+/* styles/Home.module.css */
+
+.header {
+  background-color: #252222b2; /* Dark grey background for header */
+  color: white; /* White text color */
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ddd; /* Light grey border */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center align vertically */
+  padding: 0 20px; /* Horizontal padding */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 80px; /* Fixed height for logo */
+}
+
+.menuNav {
+  width: 100%;
+  text-align: center;
+}
+
+.menuNav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  display: flex; /* Use flexbox for layout */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.menuNav ul li {
+  display: inline;
+  margin: 0 15px; /* Horizontal margin */
+}
+
+.menuNav ul li a {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold font for links */
+  font-size: 16px; /* Increase font size for better readability */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.menuNav ul li a:hover {
+  color: #00aced; /* Change to a blue color on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+@media (max-width: 768px) {
+  .menuContainer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .menuNav ul {
+    flex-direction: column; /* Stack menu items vertically */
+    gap: 10px; /* Reduce gap between menu items */
+  }
+}
+
+.container {
+  max-width: 1200px; /* You can adjust this width to your preference */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Adds some padding to the sides */
+  padding-bottom: 50px; /* Adds some padding to the bottom */
+}
+
+/* Home.module.css */
+.content-main {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+
+
+
+/* Menu.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
+  line-height: 1.5;
+}
+
+.tabMenu {
+  /* display: flex; */
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tabButton {
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  color: #484848;
+}
+
+.tabButton:first-child {
+  border-top-left-radius: 4px;
+}
+
+.tabButton:last-child {
+  border-top-right-radius: 4px;
+}
+
+.tabButton.active {
+  background-color: #8b0000;
+  color: white;
+}
+
+.subTabMenu {
+  display: flex;
+  background-color: #8b0000;
+  color: white;
+}
+
+.subTabButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.studentLoanOptions {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.studentLoanOptions h2 {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #484848;
+}
+
+.studentLoanOptions label {
+  display: block;
+  margin-bottom: 10px;
+  color: #484848;
+}
+
+.studentLoanOptions input[type="radio"] {
+  margin-right: 10px;
+}
+
+.infoIcon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+  cursor: help;
+}

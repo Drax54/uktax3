@@ -1,0 +1,102 @@
+/* globals.css */
+
+/* General body styles */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Update container style to ensure it respects its width */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the total width/height */
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+}
+
+.content-main, .content {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Heading styles */
+h1 {
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input[type="number"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+form button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 80%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Ensure long words do not overflow */
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 150px; /* Optional: Set a max width for table cells */
+    word-wrap: break-word; /* Ensure long words break to avoid overflow */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.content h1,
+.content h2 {
+    color: #333;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+
