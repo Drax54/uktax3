@@ -46,7 +46,6 @@ const Home = () => {
     const calculateTax = async (loanPlan) => {
         if (!income) return;
 
-        const userApiKey = process.env.NEXT_PUBLIC_API_KEY;
         try {
             const response = await axios.post(
                 'http://127.0.0.1:5000/calculate_tax',
@@ -54,7 +53,6 @@ const Home = () => {
                 {
                     headers: {
                         'Content-Type': 'application/json',
-                        'x-api-key': userApiKey,
                     }
                 }
             );
@@ -63,7 +61,6 @@ const Home = () => {
             console.error("Error calculating tax:", error);
         }
     };
-
     
 
     // SEO meta tags
@@ -123,33 +120,6 @@ const Home = () => {
             calculateTax(selectedLoanPlan);
         }
     }, [income]);
-
-
-    // const handleSubmit = async (event) => {
-    //     event.preventDefault();
-
-    //     const userApiKey = process.env.NEXT_PUBLIC_API_KEY;
-    //     const requestData = {
-    //         income: parseFloat(income),
-    //         loanPlan: selectedLoanPlan ? selectedLoanPlan : null,
-    //     };
-
-    //     try {
-    //         const response = await axios.post(
-    //             'http://127.0.0.1:5000/calculate_tax',
-    //             { income: parseFloat(income), loanPlan: selectedLoanPlan },  // Add loan plan to the request
-    //             {
-    //                 headers: {
-    //                     'Content-Type': 'application/json',
-    //                     'x-api-key': userApiKey,
-    //                 }
-    //             }
-    //         );
-    //         setResult(response.data);
-    //     } catch (error) {
-    //         console.error("Error calculating tax:", error);
-    //     }
-    // };
 
     const formatCurrency = (value) => {
         if (value === undefined || value === null || isNaN(value)) {
